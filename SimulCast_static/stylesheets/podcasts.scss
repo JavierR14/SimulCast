@@ -1,0 +1,315 @@
+#banner {
+  background-image: url(../../assets/images/banner.jpg);
+  margin-bottom: 3rem;
+  h1 {
+    text-align: center;
+    color: $white;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 7rem 0;
+  }
+}
+
+#podcasts {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      width: 18%;
+      float: left;
+      margin: 0 1% 2rem 1%;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 1.4px 1.8px 0.2px rgba(0,0,0,0.15);
+      box-shadow: 0 1.4px 1.8px 0.2px rgba(0,0,0,0.15);
+      img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px 5px 0 0;
+        transition: .25s ease-in-out;
+      }
+
+      .podcast_overview {
+        padding: 5.5% 5.5% 0 5.5%;
+        h2 {
+          font-size: 0.9rem;
+          margin: 0;
+          font-weight:700;
+          color: $dark-text;
+          transition: .25s ease-in-out;
+        }
+        .episode_count {
+          font-size: 0.7rem;
+          color: lighten($dark-text, 40%);
+          margin: 0.2rem 0 0.85rem 0;
+          transition: .25s ease-in-out;
+        }
+      }
+      &:hover {
+        img {
+          opacity: 0.8;
+        }
+        .podcast_overview {
+          h2 {
+            color: $highlight;
+          }
+          .episode_count {
+            color: $dark-text;
+          }
+        }
+      }
+    }
+  }
+}
+
+#podcast_view {
+  .overview {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    color: lighten($dark-text, 30%);
+    line-height: 1.6;
+  }
+
+  #view_banner {
+    background: $dark-text;
+    text-align: center;
+
+    .thumbnail {
+      width: 25%;
+      float: left;
+      img {
+        width: 15rem;
+        max-width: 100%;
+        border-radius: 5px;
+        // padding: 1.9rem 0 0 0;
+      }
+    }
+
+
+    .info {
+      padding: 5rem 0 5rem 0rem;
+      h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $white;
+        margin: 0 0 .5rem 0;
+      }
+
+
+      .share_link {
+        font-size: 0.6rem;
+        color: $white;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        display: inline;
+        background: $dark-highlight;
+        padding: 0.3rem 1rem;
+        border-radius: 5px;
+        margin: 0 0.5rem;
+        min-width: 10rem;
+        transition: .35s ease-in-out;
+        &:hover {
+          background: $white;
+          color: $dark-highlight;
+        }
+      }
+    }
+  }
+
+  #stats {
+    padding: 0.8rem 0;
+    text-align: center;
+    border-bottom: 1px solid lighten($dark-text, 70%);
+    color: #9c9ca6;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  #episodes {
+    padding: 2rem 0;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        background: $white;
+        border-radius: 10px;
+        -webkit-box-shadow: 0.5px 1.5px 5px 1.2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0.5px 1.5px 5px 1.2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        transition: .35s ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          text-decoration: none;
+        }
+        .episode_overview {
+          padding: 2rem 0 3.5rem 0;
+          h2 {
+            color: $dark-text;
+            font-size: 1.2rem;
+            width: 85%;
+            margin: 0 auto 0.2rem auto;
+            transition: .35s ease-in-out;
+          }
+          .episode_info {
+            font-size: 0.8rem;
+            margin: 0 auto 1rem auto;
+            width: 85%;
+            color: lighten($dark-text, 30%);
+            transition: .35s ease-in-out;
+          }
+          .overview {
+            font-size: 0.8rem;
+            margin: 0 auto 0 auto;
+            width: 85%;
+            color: lighten($dark-text, 40%);
+            transition: .35s ease-in-out;
+          }
+        }
+
+        &:hover {
+          -webkit-box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+          background: darken($white, 1%);
+          h2 {
+            color: $highlight;
+          }
+
+          .episode_info {
+            color: $dark-text;
+          }
+
+          .overview {
+            color: lighten($dark-text, 20%);
+          }
+        }
+      }
+    }
+  }
+
+  #episode_content {
+    padding: 2rem 0;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      .episode {
+        background: $white;
+        border-radius: 10px;
+        -webkit-box-shadow: 0.5px 1.5px 5px 1.2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0.5px 1.5px 5px 1.2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        transition: .35s ease-in-out;
+
+        .episode_box {
+          text-decoration: none;
+
+          &:hover {
+            -webkit-box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+            background: darken($white, 1%);
+            h2 {
+              color: $highlight;
+            }
+
+            .episode_info {
+              color: $dark-text;
+            }
+
+            .overview {
+              color: lighten($dark-text, 20%);
+            }
+          }
+        }
+
+        .episode_overview {
+          padding: 2rem 0 3.5rem 0;
+          h2 {
+            color: $dark-text;
+            font-size: 1.2rem;
+            width: 85%;
+            margin: 0 auto 0.2rem auto;
+            transition: .35s ease-in-out;
+          }
+          .overview {
+            font-size: 0.8rem;
+            margin: 0 auto 0 auto;
+            width: 85%;
+            color: lighten($dark-text, 40%);
+            transition: .35s ease-in-out;
+          }
+        }
+
+        .episode_info {
+          font-size: 0.8rem;
+          margin: 0 auto 1rem auto;
+          width: 85%;
+          color: lighten($dark-text, 30%);
+          transition: .35s ease-in-out;
+        }
+
+        .comments {
+          padding: 2rem 0 3.5rem 0;
+          width: 85%;
+          margin: 0 auto 0.2rem auto;
+          h2 {
+            font-size: 0.9rem;
+
+            color: $dark-text;
+            margin-bottom: 1.5rem;
+          }
+
+          #post_section {
+            padding-bottom: 2rem;
+            // border-bottom: 1px solid;
+            textarea {
+              width: 100%;
+              padding: 1rem;
+              font-size: 0.8rem;
+              border-radius: 5px;
+              border-color: $dark-text;
+            }
+          }
+
+          .comment_name {
+            color: $dark-highlight;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+
+          #comment_date {
+            color: $dark-text;
+            font-weight: 300;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+          }
+
+          #comment_text {
+            color: lighten($dark-text, 50%);
+            font-size: 0.8rem;
+            line-height: 1.4;
+          }
+
+          #reply {
+            text-decoration: none;
+            font-color
+          }
+        }
+
+        .line {
+          border-top: 2px solid;
+          width: 100%;
+          border-color: lighten($dark-text, 70%);
+        }
+
+        .comments_header {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
