@@ -727,34 +727,68 @@ template {
         color: #7f7f8d;
         transition: .35s ease-in-out; }
       #podcast_view #episode_content ul .episode .comments {
-        padding: 2rem 0 3.5rem 0;
+        padding: 1rem 0 1.5rem 0;
         width: 85%;
         margin: 0 auto 0.2rem auto; }
+        #podcast_view #episode_content ul .episode .comments .op_reply {
+          margin-left: 1rem; }
         #podcast_view #episode_content ul .episode .comments h2 {
           font-size: 0.9rem;
           color: #36363D;
           margin-bottom: 1.5rem; }
         #podcast_view #episode_content ul .episode .comments #post_section {
-          padding-bottom: 2rem; }
+          padding-bottom: 3.2rem; }
           #podcast_view #episode_content ul .episode .comments #post_section textarea {
             width: 100%;
+            max-width: 100%;
             padding: 1rem;
             font-size: 0.8rem;
             border-radius: 5px;
+            box-sizing: border-box;
             border-color: #36363D; }
+          #podcast_view #episode_content ul .episode .comments #post_section .post_link {
+            font-size: 0.6rem;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            display: inline;
+            background: #AE0A5B;
+            padding: 0.3rem 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            float: right;
+            transition: .2s ease-in-out; }
+            #podcast_view #episode_content ul .episode .comments #post_section .post_link:hover {
+              background: #F31080; }
+        #podcast_view #episode_content ul .episode .comments .comment_info {
+          color: #36363D;
+          font-weight: 300;
+          font-size: 0.5rem;
+          margin-bottom: 0.5rem;
+          margin-top: 1rem; }
         #podcast_view #episode_content ul .episode .comments .comment_name {
           color: #AE0A5B;
           font-weight: 600;
-          margin-bottom: 0.5rem; }
-        #podcast_view #episode_content ul .episode .comments #comment_date {
-          color: #36363D;
-          font-weight: 300;
           font-size: 0.8rem;
-          margin-left: 0.5rem; }
+          margin-right: 0.5rem; }
+        #podcast_view #episode_content ul .episode .comments .comment_name_highlight {
+          color: white;
+          padding: 0.1rem 0.7rem;
+          background: #F31080;
+          border-radius: 5px; }
         #podcast_view #episode_content ul .episode .comments #comment_text {
           color: #b5b5bd;
           font-size: 0.8rem;
-          line-height: 1.4; }
+          line-height: 1.4;
+          margin-bottom: 0.5rem; }
+        #podcast_view #episode_content ul .episode .comments #reply {
+          text-decoration: none;
+          font-size: 0.85rem;
+          color: #36363D;
+          transition: .25s ease-in-out; }
+          #podcast_view #episode_content ul .episode .comments #reply:hover {
+            color: #AE0A5B; }
       #podcast_view #episode_content ul .episode .line {
         border-top: 2px solid;
         width: 100%;
